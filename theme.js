@@ -21,9 +21,7 @@ const findElement = (selector) => {
   return waitForElement();
 };
 
-(function() {
-  'use strict';
-
+const init = () => {
   const findEditor = findElement('.ace_editor');
   findEditor.then((aceEditor) => {
     aceEditor.env.editor.setOptions({
@@ -36,4 +34,14 @@ const findElement = (selector) => {
       displayIndentGuides: true,
     });
   });
+};
+
+const allowedUrl = /^https:\/\/akdbuildv2.admitkard.com\/job\/.*\/configure/
+
+(function() {
+  'use strict';
+
+  if (allowedUrl.test(window.location.href)) {
+    init();
+  }
 })();
