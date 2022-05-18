@@ -1,4 +1,7 @@
 /** ACE Editor */
+.ace_editor {
+  font-size: 16px;
+}
 .ace_editor .ace_gutter {
   background: #2F3129;
   color: #8F908A
