@@ -24,6 +24,7 @@ const findElement = (selector) => {
 const init = () => {
   const findEditor = findElement('.ace_editor');
   findEditor.then((aceEditor) => {
+    window.aceEditor = aceEditor.env.editor;
     aceEditor.env.editor.setOptions({
       maxLines: Infinity,
       tabSize: 2,
