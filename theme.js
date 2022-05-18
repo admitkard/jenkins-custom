@@ -36,7 +36,7 @@ const init = () => {
   });
 };
 
-const allowedUrl = /^https:\/\/akdbuildv2.admitkard.com\/job\/.*\/configure/;
+const allowedUrl = /^https:\/\/akdbuildv2.admitkard.com\/.*job\/.*\/configure/;
 
 (function() {
   'use strict';
