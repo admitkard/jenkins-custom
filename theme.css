@@ -184,6 +184,10 @@
   --very-light-grey: var(--bg-dark-1);
   --medium-grey: var(--bg-dark-3);
   --black: (--text-disabled);
+	
+  --table-body-background: var(--bg-dark-1);
+  --table-body-foreground: var(--text-white);
+  --table-header-foreground: var(--text-white);
 }
 
 .main-search__icon-leading {
